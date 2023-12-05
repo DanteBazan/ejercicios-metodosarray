@@ -86,6 +86,9 @@ console.log("------------");
 console.log(`Ejercicio d`);
 
 pizzas.forEach((pizza) => {
-  console.log(pizza.nombre);
-  console.log(pizza.ingredientes);
+  console.log(`Ingredientes de ${pizza.nombre}:`);
+
+  pizza.ingredientes.forEach((ingrediente) => {
+    console.log(ingrediente);
+  });
 });
