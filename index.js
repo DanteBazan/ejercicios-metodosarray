@@ -54,8 +54,6 @@ console.log(`Ejercicio a:`);
 pizzas.filter((pizza) => {
   if (pizza.id % 2 !== 0) {
     console.log(`El ID de la pizza ${pizza.id} es impar`);
-  } else {
-    console.log(`El ID de la pizza ${pizza.id} es par`);
   }
 });
 
@@ -86,7 +84,7 @@ console.log("------------");
 console.log(`Ejercicio d`);
 
 pizzas.forEach((pizza) => {
-  console.log(`Ingredientes de ${pizza.nombre}:`);
+  console.log(`Ingredientes de la ${pizza.nombre} son:`);
 
   pizza.ingredientes.forEach((ingrediente) => {
     console.log(ingrediente);
